@@ -1,0 +1,12 @@
+.tiphead {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 30vh;
+    min-height: 450px;
+    background-position: center; /* Center the image */
+    background-image: url("../assets/images/writing-notes-idea-conference.jpg");
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+.card-img {
+    height: 75%!important;   
+}

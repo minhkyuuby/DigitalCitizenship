@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Công Dân Số</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--font chữ -->
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Lobster&display=swap" rel="stylesheet">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!--cái này là css cho loading nghe kekekee-->
+<link rel="stylesheet" href="./css/loaderStyle.css">
+<!--cái này là cho phần content-->
+<link rel="stylesheet" href="./css/contentStyle.css">
+</head>
+
+<body>
+    <!-- yehhh đây là cái loader thôi -->
+    <div id="loader">
+        <svg width="300" height="120" id="clackers">
+            <!-- Left arc path -->
+            <svg>
+                <path id="arc-left-up" fill="none" d="M 90 90 A 90 90 0 0 1 0 0"/>
+            </svg>
+            <!-- Right arc path -->
+            <svg>
+              <path id="arc-right-up" fill="none" d="M 100 90 A 90 90 0 0 0 190 0"/>
+            </svg>
+            
+            <text x="150" y="50" fill="#ffffff" font-family="Helvetica Neue,Helvetica,Arial" font-size="18"
+                  text-anchor="middle">
+              L O A D I N G
+            </text>
+            <circle cx="15" cy="15" r="15">
+              <!-- I used a python script to calculate the keyPoints and keyTimes based on a quadratic function. -->
+              <animateMotion dur="1.5s" repeatCount="indefinite"
+                calcMode="linear"
+                keyPoints="0.0;0.19;0.36;0.51;0.64;0.75;0.84;0.91;0.96;0.99;1.0;0.99;0.96;0.91;0.84;0.75;0.64;0.51;0.36;0.19;0.0;0.0;0.05;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0"
+                keyTimes="0.0;0.025;0.05;0.075;0.1;0.125;0.15;0.175;0.2;0.225;0.25;0.275;0.3;0.325;0.35;0.375;0.4;0.425;0.45;0.475;0.5;0.525;0.55;0.575;0.6;0.625;0.65;0.675;0.7;0.725;0.75;0.775;0.8;0.825;0.85;0.875;0.9;0.925;0.95;0.975;1.0">
+                <mpath xlink:href="#arc-left-up"/>
+              </animateMotion>
+            </circle>
+            <circle cx="135" cy="105" r="15" />
+            <circle cx="165" cy="105" r="15" />
+            <circle cx="95" cy="15" r="15">
+              <animateMotion dur="1.5s" repeatCount="indefinite"
+                calcMode="linear"
+                keyPoints="0.0;0.0;0.05;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0.0;0.19;0.36;0.51;0.64;0.75;0.84;0.91;0.96;0.99;1.0;0.99;0.96;0.91;0.84;0.75;0.64;0.51;0.36;0.19;0.0"
+                keyTimes="0.0;0.025;0.05;0.075;0.1;0.125;0.15;0.175;0.2;0.225;0.25;0.275;0.3;0.325;0.35;0.375;0.4;0.425;0.45;0.475;0.5;0.525;0.55;0.575;0.6;0.625;0.65;0.675;0.7;0.725;0.75;0.775;0.8;0.825;0.85;0.875;0.9;0.925;0.95;0.975;1.0">
+                <mpath xlink:href="#arc-right-up"/>
+              </animateMotion>
+            </circle>
+          </svg>
+    </div>
+    <!-- khi load xong thì ẩn cái loader này -->
+    <script>
+        $(window).on("load", function(){
+            $("#loader").fadeOut("slow");
+        });
+    </script>
+
+<!--### MAIN CONTENT-->
+    <header class="masthead">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-12 text-center text-white">
+            <h1 class="font-weight-bold" style="font-size: 50px;">Công dân số</h1>
+            <h5 class="font-weight-bold font-italic">Hãy cùng nhau trở thành những công dân số trong thời đại công nghệ số</hs>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Công dân số</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home
+              </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./secList.html">Chia sẻ bảo mật</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./tipList.html">Mẹo vặt công nghệ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./quizList.html">Quiz giải trí</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<hr class="m-5">
+<div class="container mt-5">
+  <div class="row">
+    <div class="m-3 col-sm main-idea1 mid">
+      <div class="p-3">
+        <h3 class="hl-under text-dark"> 
+          Để trở thành công dân số<br>
+          ta cần biết cách tự đề phòng<br>
+          trước vô vàn khả năng bị tấn công<br>
+        </h3>
+        <hr>
+        <a href="./secList.html"><button class="btn btn-info font-weight-bold text-white">Các bài viết về bảo mật</button></a>
+      </div>
+    </div>
+    <div class="m-3 col-sm"><img src="./assets/images/security.jpeg" width="100%" height="100%" alt="security"></div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="m-3 col-sm"><img src="./assets/images/pexels-photo-2007647.jpeg" width="100%" height="100%" alt="tips"></div>
+    <div class="m-3 col-sm main-idea2 mid">
+      <div class="p-3">
+        <h3 class="hl-under text-dark"> 
+          Đôi khi<br>
+          có những vấn đề<br>
+          dễ dàng giải quyết đến khó tin<br>
+        </h3>
+        <hr>
+        
+        <a href="./tipList.html"><button class="btn btn-dark font-weight-bold text-white">Những mẹo vặt công nghệ</button></a>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="m-3 col-sm main-idea3 mid">
+      <div class="p-3">
+        <h3 class="hl-under text-dark"> 
+          Qua những câu đố<br>
+          ta có thể học hỏi<br>
+          cũng vừa là cách giải trí hiệu quả<br>
+        </h3>
+        <hr>
+        
+        <a href="./quizList.html"><button class="btn btn-primary font-weight-bold text-white">Quiz games</button></a>
+      </div>
+    </div>
+    <div class="m-3 col-sm"><img src="./assets/images/quiz.jpeg" width="100%" height="100%" alt="quiz"></div>
+  </div>
+</div>
+    <div class="jumbotron text-center mt-5" style="margin-bottom:0">
+      <p>Developed by MDV</p>
+    </div>
+</body>
+</html>

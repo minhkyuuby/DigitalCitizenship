@@ -1,0 +1,15 @@
+.sechead {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 30vh;
+    min-height: 450px;
+    background-position: center; /* Center the image */
+    background-image: url("../assets/images/21.jpg");
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+.card {
+    height: 100%!important;
+}
+.card-img {
+    height: 75%!important;   
+}
