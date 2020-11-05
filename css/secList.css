@@ -13,3 +13,6 @@
 .card-img {
     height: 75%!important;   
 }
+.card-body {
+    height: 230px!important;
+}
