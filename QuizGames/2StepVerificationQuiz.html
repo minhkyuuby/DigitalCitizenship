@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>2 step verification quizs</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="../css/quizsStyle/2SVStyle.css">
+          <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../scripts/quizscripts/2SVScript.js"></script>
+</head>
+<body>
+    <!--Modal congratulate-->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title text-primary">Kết thúc</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body text-primary">
+              <p>Chúc mừng!! Bạn đã trả lời đúng các câu hỏi.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default reset">Restart</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <!--Modal Fail-->
+    <div class="modal fade" id="myModal2" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Kết thúc</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <p>Bạn chưa trả lời đúng, hãy thử lại nhé!</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    <!--Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+        <div class="container">
+        <a class="navbar-brand" href="../index.html">Công dân số</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home
+                    </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../secList.html">Chia sẻ bảo mật</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../tipList.html">Mẹo vặt công nghệ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../quizList.html">Quiz giải trí</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <header class="head">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center pt-3">
+            <div class="col-12 text-center text-warning">
+              <h1 class="font-weight-bold" style="font-size: 50px;">Trắc nghiệm về bảo mật 2 lớp tải khoản google</h1>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="container">
+        <div class="center-card card border-primary mt-3 mb-3" style="max-width: 50rem;">
+            <div class="card-header text-center"><h5 class="card-title">Quiz</h5></div>
+            <div class="card-body text-primary">
+              <p class="card-text text-center">Hãy lựa chọn đáp án đúng.</p>
+            </div>
+          </div>
+        <div>
+            <div class="ques mb-3 card">
+                <div class="card-body">
+                    <h4 class="">1. Bật xác minh hai bước cho tài khoản của bạn có tác dụng:</h4>
+                    <div class="form-check">
+                        <label class="form-check-label" for="A1-1">
+                          <input type="radio" class="form-check-input" id="A1-1" name="Q1" value="o1">Giúp đăng nhập không cần mật khẩu.
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label" for="A1-2">
+                          <input type="radio" class="form-check-input" id="A1-2" name="Q1" value="o2">Giúp bạn bảo mật tài khoản tốt hơn, an toàn hơn.
+                        </label>
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label" for="A1-3">
+                          <input type="radio" class="form-check-input" id="A1-3" name="Q1" value="o3">Giúp chặn quảng cáo.
+                      </div>
+                </div>
+            </div>
+            <div class="ques mb-3 card">
+                <div class="card-body">
+                    <h4 class="">2. Khi cài đặt kích hoạt xác minh 2 bước, đâu là cách để bạn có thể nhận mã xác minh của google:</h4>
+                    <div class="form-check">
+                        <label class="form-check-label" for="A2-1">
+                          <input type="radio" class="form-check-input" id="A2-1" name="Q2" value="o1">Nhận xin nhắn văn bản.
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label" for="A2-2">
+                          <input type="radio" class="form-check-input" id="A2-2" name="Q2" value="o2">Nhận cuộc gọi điện thoại.
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label" for="A2-3">
+                          <input type="radio" class="form-check-input" id="A2-3" name="Q2" value="o3">Cả 2.
+                        </label>
+                      </div>
+                </div>
+            </div>
+            <div class="ques mb-3 card">
+                <div class="card-body">
+                    <h4 class="">3. Điều nào sau đây sai sau khi kích hoạt xác minh 2 lớp:</h4>
+                    <div class="form-check">
+                        <label class="form-check-label" for="A3-1">
+                          <input type="radio" class="form-check-input" id="A3-1" name="Q3" value="o1">Chỉ cần có mật khẩu là bạn vẫn đăng nhập được tài khoản.
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label" for="A3-2">
+                          <input type="radio" class="form-check-input" id="A3-2" name="Q3" value="o2">Mỗi lần đăng nhập bạn phải nhập mã xác minh được gửi tới gmail.
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label" for="A3-3">
+                          <input type="radio" class="form-check-input" id="A3-3" name="Q3" value="o3">Mỗi lần đăng nhập không cần mã xác nhận, bạn chỉ cần chấp nhận bằng điện thoại nếu đã cài đặt trước.
+                        </label>
+                      </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+              <button id="submit" type="submit" class="btn btn-primary center">Submit</button>
+            </div>
+        </div>
+      </div>
+      <div class="container mt-5">
+        <h4>Bạn nên tham khảo các bài viết dưới đây để dễ dàng hoàn thành các câu hỏi: </h4>
+        <div class="text-center">
+
+          <a href="../secBlogs/Infor4.html"><h5>Google 2 Step verification</h5></a>
+                  </div>
+
+      </div>
+ <div class="jumbotron text-center mt-5" style="margin-bottom:0">
+          <p>Developed by MDV</p>
+        </div>
+</body>
+</html>
