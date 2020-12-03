@@ -11,7 +11,7 @@ body{
     height: 25vh;
     min-height: 250px;
     background-position: center; /* Center the image */
-    background-image: url("../../assets/images/forquizs/cardMatching/banner2.jpeg");
+    background-image: url("../../assets/images/forquizs/2VS/banner.jpeg");
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */   
 }
